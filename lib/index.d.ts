@@ -1,5 +1,5 @@
 declare module 'react-autocomplete-input' {
-    import type { JSX, Component, ComponentType, KeyboardEvent, FocusEventHandler, InputHTMLAttributes } from 'react';
+    import type { JSX, Component, ComponentType, KeyboardEvent, FocusEventHandler, TextareaHTMLAttributes } from 'react';
   
     type AutocompleteTextFieldPropsGeneral = {
       Component?: string | ComponentType<any>;
@@ -23,7 +23,7 @@ declare module 'react-autocomplete-input' {
       offsetY?: number;
       passThroughEnter?: boolean;
       passThroughTab?: boolean;
-    } & JSX.IntrinsicAttributes & InputHTMLAttributes<HTMLTextAreaElement>;
+    } & JSX.IntrinsicAttributes & TextareaHTMLAttributes<HTMLTextAreaElement>;
   
     export type AutocompleteTextFieldProps =
       | ({
